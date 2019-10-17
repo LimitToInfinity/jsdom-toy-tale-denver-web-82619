@@ -53,6 +53,8 @@ function newToy(event) {
 }
 
 function addToAllToys(toy) {
+  allToys.push(toy)
+  
   return toy
 }
 
