@@ -38,12 +38,11 @@ function newToy(event) {
 
   const name = formData.get("name");
   const image = formData.get("image");
-  const likes = 0
   
   const toyBody = {
     name,
     image,
-    likes
+    likes: 0,
   }
 
   fetchCall(toyURL, "POST", toyBody)
@@ -99,6 +98,7 @@ function increaseLikes(event) {
 
 function dbIncrease(event, newLikes){
   const toyName = event.target.parentNode.querySelector('h2').innerText
+  
   let toyObj = allToys.filter(toy => toy.name === toyName)
   toyObj = toyObj[0]
 
