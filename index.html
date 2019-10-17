@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  
   <head>
     <meta charset="utf-8">
     <title>Toy Tale</title>
 
     <link rel="stylesheet" href="index.css">
   </head>
+  
   <body>
     
     <div id='toy-header'>
@@ -16,20 +18,33 @@
       <form class="add-toy-form" style="">
         <h3>Create a toy!</h3>
 
-        <input type="text" name="name" value="" placeholder="Enter a toy's name..." class="input-text">
+        <input 
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a toy's name..."
+          class="input-text"
+        >
         <br>
-        <input type="text" name="image" value="" placeholder="Enter a toy's image URL..." class="input-text">
+        <input
+          type="text"
+          name="image"
+          value=""
+          placeholder="Enter a toy's image URL..."
+          class="input-text"
+        >
         <br>
         <input type="submit" name="submit" value="Create New Toy" class="submit">
       </form>
     </div>
-    <p style='text-align:center' >Andy needs your help! <button id='new-toy-btn'>Add a new toy!</button></p>
+    
+    <p style='text-align:center' >Andy needs your help!
+      <button id='new-toy-btn'>Add a new toy!</button>
+    </p>
 
-
-    <div id="toy-collection">
-    </div>
-
+    <div id="toy-collection"></div>
 
     <script type="text/javascript" src="src/index.js"></script>
   </body>
+
 </html>
